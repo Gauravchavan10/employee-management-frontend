@@ -1,0 +1,54 @@
+.bg-skyblue {
+    background-color: #ceecf8; /* Sky blue color */
+  }
+
+  .navbar {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(104, 103, 103) !important; /* White brand text */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: rgb(110, 107, 107) !important; /* White nav links */
+    margin-right: 20px; /* Spacing between links */
+    transition: color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #0056b3 !important; /* Change to darker blue on hover */
+  }
+
+  .navbar-toggler {
+    border-color: white; /* White border for the toggle button */
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* White icon */
+  }
+  .navbar {
+    background-color: skyblue; /* Change navbar background color */
+  }
+  
+  .nav-link {
+    color: white; /* Change link color */
+    margin-right: 20px; /* Add spacing between links */
+  }
+  
+  .navbar-brand {
+    font-weight: bold; /* Make brand name bold */
+  }
+  
+  .navbar-text {
+    color: white; /* Color for welcome text */
+    margin-right: 20px; /* Spacing before logout */
+  }
+  
+  .btn-danger {
+    margin-left: 10px; /* Add some space before logout */
+  }
+  

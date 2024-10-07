@@ -1,0 +1,68 @@
+<div class="employee-list-container">
+    <h2>Employee List</h2>
+
+   
+    <div class="search-bar mb-3">
+        <label for="searchId">Search by Employee ID:</label>
+        <div class="input-group">
+            <input
+                id="searchId"
+                type="number"
+                [(ngModel)]="searchId"
+                class="form-control"
+                placeholder="Enter Employee ID"
+            />
+            <button
+                class="btn btn-primary"
+                (click)="searchEmployee()"
+                [disabled]="searchId === null"
+            >
+                Search
+            </button>
+        </div>
+    </div>
+
+    
+    <div *ngIf="filteredEmployee; else employeeList">
+        <h4>Search Result:</h4>
+        <div class="employee-details">
+            <p><strong>ID:</strong> {{ filteredEmployee.id }}</p>
+            <p><strong>Username:</strong> {{ filteredEmployee.userName }}</p>
+            <p><strong>Name:</strong> {{ filteredEmployee.name }}</p>
+            <p><strong>Department:</strong> {{ filteredEmployee.department }}</p>
+            <p><strong>Position:</strong> {{ filteredEmployee.position }}</p>
+            <p><strong>Salary:</strong> {{ filteredEmployee.salary }}</p>
+        </div>
+    </div>
+
+    <ng-template #employeeList>
+        <h4>All Employees:</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employees">
+                    <td>{{ employee.id }}</td>
+                    <td>{{ employee.userName }}</td>
+                    <td>{{ employee.name }}</td>
+                    <td>{{ employee.department }}</td>
+                    <td>{{ employee.position }}</td>
+                    <td>{{ employee.salary }}</td>
+                    <td>
+                        <a [routerLink]="['/employees/update', employee.id]" class="btn btn-warning btn-sm">Update</a>
+                        <a [routerLink]="['/employees/delete', employee.id]" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </ng-template>
+</div>

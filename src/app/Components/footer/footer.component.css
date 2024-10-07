@@ -1,0 +1,28 @@
+.footer-container {
+    background-color: #343a40; /* Dark background */
+    color: white; /* White text color */
+    padding: 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer-content {
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center the content */
+}
+
+.social-links {
+    margin-top: 10px; /* Margin above social links */
+}
+
+.social-links a {
+    color: white; /* White link color */
+    margin: 0 10px; /* Spacing between links */
+    text-decoration: none; /* No underline */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

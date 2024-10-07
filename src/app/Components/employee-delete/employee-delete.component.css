@@ -1,0 +1,45 @@
+.employee-delete-container {
+    max-width: 400px; /* Set a max width for the container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f8f9fa; /* Light background for better visibility */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .delete-title {
+    font-size: 1.5rem; /* Larger font size for the title */
+    margin-bottom: 15px; /* Space below the title */
+    color: #dc3545; /* Danger color for the title */
+    text-align: center; /* Center the title */
+  }
+  
+  .confirmation-message {
+    font-size: 1rem; /* Standard font size for messages */
+    margin-bottom: 20px; /* Space below the confirmation message */
+    text-align: center; /* Center the message */
+  }
+  
+  .delete-button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding for button */
+    font-size: 1rem; /* Standard font size for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white; /* White text for contrast */
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+  }
+  
+  .text-warning {
+    color: #856404; /* Warning text color */
+    text-align: center; /* Center the warning message */
+    font-weight: bold; /* Bold warning text */
+  }
+  

@@ -1,0 +1,57 @@
+<div class="add-employee-container">
+    <h2>Add New Employee</h2>
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="userName">Username:</label>
+            <input id="userName" formControlName="userName" class="form-control" />
+            <div *ngIf="employeeForm.get('userName')?.invalid && employeeForm.get('userName')?.touched">
+                <small class="error text-danger">Username is required</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" formControlName="name" class="form-control" />
+            <div *ngIf="employeeForm.get('name')?.invalid && employeeForm.get('name')?.touched">
+                <small class="error text-danger">Name is required</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <input id="department" formControlName="department" class="form-control" />
+            <div *ngIf="employeeForm.get('department')?.invalid && employeeForm.get('department')?.touched">
+                <small class="error text-danger">Department is required</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="position">Position:</label>
+            <input id="position" formControlName="position" class="form-control" />
+            <div *ngIf="employeeForm.get('position')?.invalid && employeeForm.get('position')?.touched">
+                <small class="error text-danger">Position is required</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="salary">Salary:</label>
+            <input id="salary" type="number" formControlName="salary" class="form-control" />
+            <div *ngIf="employeeForm.get('salary')?.invalid && employeeForm.get('salary')?.touched">
+                <small class="error text-danger">Salary must be positive</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input id="password" type="password" formControlName="password" class="form-control" />
+            <div *ngIf="employeeForm.get('password')?.invalid && employeeForm.get('password')?.touched">
+                <small class="error text-danger">Password is required and should be at least 8 characters long</small>
+            </div>
+        </div>
+
+        <button type="submit" [disabled]="employeeForm.invalid" class="btn btn-primary">Add Employee</button>
+
+        <div *ngIf="errorMessage" class="error-message text-danger">{{ errorMessage }}</div>
+        <div *ngIf="successMessage" class="success-message text-success">{{ successMessage }}</div>
+    </form>
+</div>

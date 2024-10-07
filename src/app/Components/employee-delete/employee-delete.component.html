@@ -1,0 +1,20 @@
+<div class="employee-delete-container">
+    <h2 class="delete-title">Delete Employee</h2>
+    
+    <p *ngIf="employee" class="confirmation-message">
+      Are you sure you want to delete <strong>{{ employee.name }}</strong>?
+    </p>
+  
+    <button 
+      class="btn btn-danger delete-button" 
+      (click)="deleteEmployee()" 
+      *ngIf="canDelete()"
+    >
+      Delete Employee
+    </button>
+  
+    <p *ngIf="!canDelete()" class="text-warning">
+      You are not authorized to delete this employee.
+    </p>
+  </div>
+  

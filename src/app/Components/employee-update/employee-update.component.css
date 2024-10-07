@@ -1,0 +1,22 @@
+.employee-form {
+    max-width: 600px; /* Set a max width for the form */
+    margin: 20px auto; /* Center the form */
+    padding: 20px; /* Add padding */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .form-title {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Spacing below the title */
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Space between form groups */
+  }
+  
+  .btn {
+    width: 100%; /* Full-width button */
+  }
+  

@@ -1,0 +1,55 @@
+.employee-list-container {
+    max-width: 800px; /* Set a max width for the container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #ffffff; /* White background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h2 {
+    text-align: center; /* Center the heading */
+    color: #343a40; /* Dark color for text */
+  }
+  
+  .search-bar {
+    margin-bottom: 20px; /* Margin below the search bar */
+  }
+  
+  .input-group {
+    display: flex; /* Use flex for the search bar layout */
+  }
+  
+  .form-control {
+    flex: 1; /* Make the input take available space */
+  }
+  
+  .employee-details {
+    background-color: #f8f9fa; /* Light background for details */
+    padding: 15px; /* Padding for details */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Margin below details */
+  }
+  
+  .table {
+    width: 100%; /* Full width table */
+    margin-top: 20px; /* Margin above the table */
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2; /* Zebra striping effect for table rows */
+  }
+  
+  .table th, .table td {
+    text-align: center; /* Center text in table cells */
+  }
+  
+  .table th {
+    background-color: #007bff; /* Header background color */
+    color: white; /* White text for header */
+  }
+  
+  .btn {
+    margin: 0 5px; /* Space between buttons */
+  }
+  
