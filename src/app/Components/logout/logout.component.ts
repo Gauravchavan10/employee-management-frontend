@@ -7,12 +7,5 @@ import { Router } from '@angular/router';
   styleUrls: ['./logout.component.css']
 })
 export class LogoutComponent {
-  constructor(private router : Router)
-  {
-    
-  }
-  logout() {
-    localStorage.removeItem('token');
-    this.router.navigate(['/login']);
-  }
+
 }
